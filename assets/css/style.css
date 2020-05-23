@@ -1,0 +1,190 @@
+body {
+  padding-bottom: 61px;
+  background-image: url("../images/background_img.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+/*brand name style*/
+#brand {
+  color: whitesmoke;
+  font-weight: bold;
+  font-size: 28px;
+  margin-left: 5px;
+}
+/*navigation style details*/
+.navbar-nav {
+  margin-left: auto;
+}
+.navbar {
+  padding: 0;
+}
+
+/*main section h1 heading*/
+#main-heading {
+  font-family: "Times New Roman", Times, serif;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+/*profile image*/
+.profile-img {
+  margin: 6px 10px 0 0;
+  width: 250px;
+  height: 250px;
+  float: left;
+}
+/*h2 heading*/
+#profile-heading {
+  font-weight: bold;
+  font-size: 25px;
+}
+/*section content*/
+#profile-summary {
+  font-family: "Source Sans Pro", sans-serif;
+}
+/*footer*/
+.footer {
+  height: 55px;
+  bottom: 0;
+  position: absolute;
+  width: 100%;
+}
+/*footer heading*/
+h3 {
+  font-size: 20px;
+  color: azure;
+  margin-top: 15px;
+}
+
+/*portfolio image and button in portfolio page*/
+.card-position {
+  position: relative;
+  margin-bottom: 8px;
+}
+.btn1 {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  height: auto;
+  text-align: center;
+  color: beige;
+  background-color: rgb(38, 58, 57);
+}
+
+/*form style in contact page*/
+#contact-form {
+  background-color: rgb(84, 133, 126);
+  border: 10px;
+  border: 1px solid rgb(170, 209, 187);
+  border-radius: 10px;
+  width: 80%;
+  height: auto;
+}
+/*form input fields style*/
+.form-group {
+  margin: 8px;
+  padding-top: 8px;
+}
+
+/*media query for devices with max screen size 980px*/
+@media screen and (max-width: 980px) {
+  /*
+	  No specific rules for large screens at this time.
+	*/
+}
+
+/*media query for devices with max screen size 768px*/
+@media screen and (max-width: 768px) {
+  #contact-form {
+    width: 100%;
+    height: auto;
+  }
+  #main-heading {
+    font-size: 32px;
+  }
+  #profile-heading {
+    font-size: 22px;
+  }
+  #profile-summary {
+    font-size: 18px;
+  }
+}
+
+/*media query for devices with max screen size 640px*/
+@media screen and (max-width: 640px) {
+  .navbar-brand,
+  .navbar-nav {
+    margin-left: 10px;
+  }
+  .nav-link {
+    font-size: 18px;
+  }
+  .container {
+    padding-left: 10px;
+  }
+  #main-heading {
+    font-size: 31px;
+  }
+  #profile-summary {
+    font-size: 18px;
+  }
+  #profile-heading {
+    font-size: 22px;
+  }
+  .profile-img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+  }
+  #contact-form {
+    width: 100%;
+    height: auto;
+  }
+}
+
+
+/*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
+.about-mf .box-shadow-full {
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+
+.about-mf .about-img {
+  margin-bottom: 2rem;
+}
+
+.about-mf .about-img img {
+  margin-left: 10px;
+}
+
+@media (min-width: 767px) {
+  .about-mf .box-pl2 {
+    margin-top: 3rem;
+    padding-left: 0rem;
+  }
+}
+
+.skill-mf span {
+  color: #4e4e4e;
+}
+
+.skill-mf .progress {
+  background-color: #cde1f8;
+  margin: .5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: .7rem;
+}
+
+.skill-mf .progress .progress-bar {
+  height: .7rem;
+  background-color: #0078ff;
+}
