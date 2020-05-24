@@ -4,188 +4,165 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"
+        integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+        integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css" />
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>Portfolio</title>
-    <!--google fonts-->
-    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400&display=swap"
-        rel="stylesheet">
-    <!--bootstrap link-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link href="assets/css/style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-    <!---navigation bar starting-->
-    <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
         <div class="container">
-            <!--brand name-->
-            <a id="brand" class="navbar-brand" href="index.html">Priyanka Singh</a>
-
-            <!--toogle button-->
-            <button id="toggle-btn" class="navbar-toggler nav-links" type="button" data-toggle="collapse"
-                data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                aria-label="Toggle navigation">
+            <a href="index.html" class="navbar-brand">Priyanka Singh</a>
+            <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse nav-display" id="navbarNavAltMarkup">
-                <!--navigation links-->
-                <div class="navbar-nav">
-                    <a class="nav-item nav-link" href="index.html">About</a>
-                    <a class="nav-item nav-link" href="portfolio.html">Portfolio</a>
-                    <a class="nav-item nav-link" href="contact.html">Contact</a>
-                </div>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a href="index.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="resume.html" class="nav-link">Resume</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="portfolio.html" class="nav-link">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
             </div>
         </div>
     </nav>
-    <!--navigation bar ending-->
 
-    <!-- main section starting
-    <div class="container">
-        main heading
-        <div class="row">
-            <div class="col-md-12">
-                <h1 id="main-heading" class="text-dark border-bottom border-dark">About Me</h1>
-                <!--section
-                <div class="row">
-                    <div class="col-md-12">
-                        <!--profile image
-                        <img src="assets/images/Pri.JPG" class="profile-img img-fluid" alt="Priyanka">
-                        <!--sub-heading h2
-    <h2 id="profile-heading">Professional Summary</h2>
-    <!--section content
-                        <p id="profile-summary">I am an aspiring full stack developer currently pursuing coding boot
-                            camp from UNH, New Hampshire. I am excited about learning code and developing new projects.
-                            Some of the new technologies I have learnt so far are bootstrap, github and javascript.
-                            <br>
-                            I have bachelor’s degree in engineering. My experience includes Software Quality Assurance
-                            for
-                            various web and window-based applications with .Net and Java environment. I
-                            have experience with different SDLC methodologies such as Waterfall, and Agile Process
-                            (Scrum Methodology) and very well acquainted with Software Development Life Cycle (SDLC),
-                            Software Testing Life Cycle (STLC), and Defect Life Cycle (DLC).
-                            I have expertise in Functional Testing, System Testing, Regression Testing, Smoke Testing,
-                            UAT Testing, Performance Testing and GUI testing. In addition, also have experience in
-                            writing and executing SQL statements and creating functional specification document,
-                            requirement traceability matrix document.
-
-                            I am very well exposed to Defect Management Tracking tools like JIRA, Quality Center, and
-                            Mantis. Also, have exposure on Agile testing methodology, daily SCRUM
-                            meetings, and SPRINT delivery.
-
-                        </p>
-                    </div>
-                </div>
-                <!--section-
-            </div>
-        </div>
-
-
-    </div> -->
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about-mf sect-pt4 route">
+    <!--HEADER -->
+    <header id="page-header">
         <div class="container">
             <div class="row">
-                <div class="col-sm-12">
-                    <div class="box-shadow-full">
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="row">
-                                    <div class="col-sm-6 col-md-5">
-                                        <div class="about-img">
-                                            <img src="assets/images/Pri.JPG" class="img-fluid rounded b-shadow-a"
-                                                alt="">
-                                        </div>
-                                    </div>
-                                    <div class="col-sm-6 col-md-7">
-                                        <div class="about-info">
-                                            <p><span class="title-s">Name: </span> <span>Priyanka Singh</span></p>
-                                            <p><span class="title-s">Profile: </span> <span>Full Stack Developer</span>
-                                            </p>
-                                            <p><span class="title-s">Email: </span>
-                                                <span>priyankasingh30@gmail.com</span></p>
-                                            <p><span class="title-s">Phone: </span> <span>(603) 285-5485</span></p>
-                                        </div>
+                <div class="col-md-6 m-auto text-center">
+                    <h1>About Me</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ABOUT SECTION -->
+    <section id="about" class="py-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-sm-6 col-md-5">
+                                    <div class="about-img">
+                                        <img src="assets/images/Pri.JPG" class="img-fluid rounded-circle about-img"
+                                            alt="">
                                     </div>
                                 </div>
-                                <div class="skill-mf">
-                                    <p class="title-s">Skill Set</p>
-                                    <span>HTML</span> <span class="pull-right">85%</span>
-                                    <div class="progress">
-                                        <div class="progress-bar" role="progressbar" style="width: 85%;"
-                                            aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                    <span>CSS3</span> <span class="pull-right">75%</span>
-                                    <div class="progress">
-                                        <div class="progress-bar" role="progressbar" style="width: 75%"
-                                            aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                    <span>Node.js</span> <span class="pull-right">50%</span>
-                                    <div class="progress">
-                                        <div class="progress-bar" role="progressbar" style="width: 50%"
-                                            aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
-                                    </div>
-                                    <span>JAVASCRIPT</span> <span class="pull-right">90%</span>
-                                    <div class="progress">
-                                        <div class="progress-bar" role="progressbar" style="width: 90%"
-                                            aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="col-sm-6 col-md-7">
+                                    <div class="about-info">
+                                        <p><span class="title-s"><strong>Name:</strong> </span> <span>Priyanka
+                                                Singh</span></p>
+                                        <p><span class="title-s"><strong>Profile:</strong> </span> <span>Full Stack
+                                                Developer</span>
+                                        </p>
+                                        <p><span class="title-s"><strong>Email:</strong> </span>
+                                            <span>priyankasingh30@gmail.com</span></p>
+                                        <p><span class="title-s"><strong>Phone:</strong> </span> <span>(603)
+                                                285-5485</span></p>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-6">
-                                <div class="about-me pt-4 pt-md-0">
-                                    <div class="title-box-2">
-                                        <h5 class="title-left">
-                                            About me
-                                        </h5>
-                                    </div>
-                                    <p class="lead">
-                                        Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Curabitur
-                                        arcu erat, accumsan id
-                                        imperdiet et, porttitor
-                                        at sem. Praesent sapien massa, convallis a pellentesque nec, egestas non nisi.
-                                        Nulla
-                                        porttitor accumsan tincidunt.
-                                    </p>
-                                    <p class="lead">
-                                        Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a. Vivamus suscipit
-                                        tortor eget felis
-                                        porttitor volutpat. Vestibulum
-                                        ac diam sit amet quam vehicula elementum sed sit amet dui. porttitor at sem.
-                                    </p>
-                                    <p class="lead">
-                                        Nulla porttitor accumsan tincidunt. Quisque velit nisi, pretium ut lacinia in,
-                                        elementum id enim.
-                                        Nulla porttitor accumsan
-                                        tincidunt. Mauris blandit aliquet elit, eget tincidunt nibh pulvinar a.
-                                    </p>
+                            <div>
+                                <h4 class="mt-2">My Skills</h4>
+                                <hr>
+                                <h5>HTML 5</h5>
+                                <div class="progress mb-3">
+                                    <div class="progress-bar bg-success" style="width:100%"></div>
+                                </div>
+                                <h5>CSS 3</h5>
+                                <div class="progress mb-3">
+                                    <div class="progress-bar bg-success" style="width:100%"></div>
+                                </div>
+                                <h5>JavaScript</h5>
+                                <div class="progress mb-3">
+                                    <div class="progress-bar bg-success" style="width:90%"></div>
+                                </div>
+                                <h5>Node</h5>
+                                <div class="progress mb-3">
+                                    <div class="progress-bar bg-success" style="width:80%"></div>
+                                </div>
+                                <h5>SQL Server</h5>
+                                <div class="progress mb-3">
+                                    <div class="progress-bar bg-success" style="width:70%"></div>
                                 </div>
                             </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <h2>Professional Summary</h2>
+                            <p>I am an aspiring full stack developer currently pursuing coding boot
+                                camp from UNH, New Hampshire. I am excited about learning code and developing new
+                                projects.
+                                Some of the new technologies I have learnt so far are bootstrap, github and javascript.
+                            </p>
+                            <p>
+                                I have bachelor’s degree in engineering. My experience includes Software Quality
+                                Assurance
+                                for
+                                various web and window-based applications with .Net and Java environment. I
+                                have experience with different SDLC methodologies such as Waterfall, and Agile Process
+                                (Scrum Methodology) and very well acquainted with Software Development Life Cycle
+                                (SDLC),
+                                Software Testing Life Cycle (STLC), and Defect Life Cycle (DLC).
+                                I have expertise in Functional Testing, System Testing, Regression Testing, Smoke
+                                Testing,
+                                UAT Testing, Performance Testing and GUI testing. In addition, also have experience in
+                                writing and executing SQL statements and creating functional specification document,
+                                requirement traceability matrix document.
+
+                                I am very well exposed to Defect Management Tracking tools like JIRA, Quality Center,
+                                and
+                                Mantis. Also, have exposure on Agile testing methodology, daily SCRUM
+                                meetings, and SPRINT delivery.
+                            </p>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </section><!-- End About Section -->
-    <!--main section ending-->
+    </section>
 
-    <!--footer-->
-    <footer class="footer bg-dark">
+
+    <!-- FOOTER -->
+    <footer id="main-footer" class="text-center p-2">
         <div class="container">
-            <!--footer heading-->
-            <h3 class="text-center">&copy;2020 Priyanka Singh</h3>
+            <div class="row">
+                <div class="col">
+                    <p>Copyright &copy;2020 Priyanka Singh</p>
+                </div>
+            </div>
         </div>
     </footer>
 
-    <!---added javascript for toggle button-->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+
+    <script src="http://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+        integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
         crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
+
 </body>
 
 </html>
