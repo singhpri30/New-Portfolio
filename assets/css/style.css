@@ -55,7 +55,12 @@ body {
   font-style: italic;
 }
 
-
+.contact-link{
+  color: azure;
+}
+.contact-link:hover{
+  color: rgb(9, 12, 12);
+}
 
 
 
@@ -82,24 +87,5 @@ body {
 
 
 
-#faq .card {
-  border: #444;
-}
-
-#faq a {
-  color: #fff;
-  text-decoration: none;
-}
-
-#faq .card-body,
-#faq .card-header {
-  background: #333;
-}
 
 
-.contact-link{
-  color: azure;
-}
-.contact-link:hover{
-  color: rgb(9, 12, 12);
-}
