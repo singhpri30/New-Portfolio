@@ -1,24 +1,15 @@
 body {
-  /* padding-bottom: 61px; */
-  background-image: url("../images/background_img.jpg");
+  /* background-image: url("../images/background_img.jpg"); */
+  background-image: url("../images/vdhgv54ndnj21.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   overflow-x: hidden;
   font-family: "Source Sans Pro", sans-serif;
 }
-/* html {
-  position: relative;
-  min-height: 100%;
-} */
 
-/*footer*/
 #main-footer {
-  /* height: 55px;
-  bottom: 0;
-  position: absolute;
-  width: 100%; */
-  background: #000;
+    background: #000;
   color: #fff;
   
 }
@@ -49,6 +40,11 @@ body {
 }
 .about-info{
   margin-top: 30px;
+  color: #000;
+}
+
+.card{
+  border:gray 1px solid;
 }
 
 .card-title{
@@ -60,6 +56,18 @@ body {
 }
 .contact-link:hover{
   color: rgb(9, 12, 12);
+}
+.card-columns{
+  max-width: 100%;
+}
+#resume{
+  color: black;
+}
+.summary{
+  color: #000;
+}
+#skills{
+  color: #000;
 }
 
 
@@ -73,13 +81,34 @@ body {
 
 /*media query for devices with max screen size 768px*/
 @media screen and (max-width: 768px) {
- 
+.about-img {
+  margin-top: -20px;
+  width: 100%;
+    } 
+.about-info{
+  margin-top: 0;
+  }
+.progress{
+  margin-bottom: 5px !important;
+  }
 }
 
 /*media query for devices with max screen size 640px*/
 @media screen and (max-width: 640px) {
+.about-img {
+  margin-top: -20px;
+  } 
+.about-info{
+  text-align: center;
+  margin-top: 8px;
+}
+.progress{
+  margin-bottom: 5px !important;
+}
   
 }
+
+
 
 
 
